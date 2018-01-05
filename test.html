@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery Get Values of Selected Checboxes</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("button").click(function(){
+            var favorite = [];
+            $.each($("input[name='sport']:checked"), function(){            
+                favorite.push($(this).val());
+            });
+            alert("My favourite sports are: " + favorite.join(", "));
+        });
+    });
+</script>
+</head>
+<body>
+    <form>
+        <h3>Select your favorite sports:</h3>
+        <label><input type="checkbox" value="Medi-Cal" name="sport"> Medi-Cal</label>
+        <label><input type="checkbox" value="L.A.CareCovered" name="sport">L.A. Care Covered</label>
+        <label><input type="checkbox" value="PASC-SEIU-Plan" name="sport"> PASC-SEIU Plan</label>
+        <label><input type="checkbox" value="Cal-MediConnect" name="sport"> Cal MediConnect</label>
+        <br>
+        <button type="button">Get Values</button>
+    </form>
+</body>
+</html>

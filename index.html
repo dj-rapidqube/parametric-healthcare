@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" href="doctor.ico">
+    <title>Mediclaim</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" style="color:black" href="#page-top">Rapidqube</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about">Create Contract</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#services">Contract Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#portfolio">Claim Details</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#help">Claim Details</a>
+                    </li> -->
+                    <!-- <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact">Xchange Details</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="masthead text-center text-white d-flex">
+        <div class="container my-auto">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h1 class="text-uppercase">
+              <strong  style="color:black" >Parametric Healthcare</strong>
+            </h1>
+                    <hr>
+                </div>
+                <div class="col-lg-8 mx-auto">
+                    <!-- <p class="text-faded mb-5">Create Contract </p> -->
+                    <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">create contract</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-heading text-white">Parameters</h2>
+                    <hr class="light my-4">
+
+                    <div class="box">
+
+                        <div id="header">
+
+                        </div>
+                        <h1 class="section-heading text-dark"><b>Contract Form</b></h1>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <br>
+                                <br>
+                                <h1 style="color:black; margin-left:-220px;">select plans</h1>
+                                <div class="checkbox">
+
+                                    <label>
+                                        <input type="checkbox" style="margin-left:-252px;" id="policy" value="Medi-Cal" name="policy"> Medi-Cal</label>
+                                    <br>
+                                    <label>
+                                        <input type="checkbox" style="margin-left:-194px;" id="policy" value="L.A.CareCovered" name="policy">L.A. Care Covered</label>
+                                    <br>
+                                    <label>
+                                        <input type="checkbox" style="margin-left:-197px;" id="policy" value="PASC-SEIU-Plan" name="policy"> PASC-SEIU Plan</label>
+                                    <br>
+                                    <label>
+                                        <input type="checkbox" style="margin-left:-197px;" id="policy" value="Cal-MediConnect" name="policy"> Cal MediConnect</label>
+
+                                    <!-- <button type="button" style=" margin-left:30px; width: 200px; display:inline; ">Select</button> -->
+                                    <!-- </select> -->
+
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                         
+                            <div class="col-sm-6">
+                             
+                                <br>
+                               <br>
+                                <a style="color:black; margin-left:-210px;">minimum Amount</a>
+                                <br>
+                                <br>
+                                <input class="form-control" style=" height:30px; width:55%; margin-left:10px;" type="text" id="ICNB" name="ICNB" placeholder="Amount in $"></input>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <br>
+                                <h1 style="text-align:start;  font-size:18px; height:10px; color:black;">Location</h1>
+                                <br>
+
+                                <div class="dropdown">
+
+                                    <select id="L" style=" margin-left:-150px; width: 200px; display:inline; height:30px" onclick="myFunction()">
+                                        <option id="" value="">-------select--------</option>
+                                        <option id="L" value="London">London</option>
+                                        <option id="L" value="Delhi">Delhi</option>
+                                        <option id="L" value="Goa">Goa</option>
+                                        <option id="L" value="Chennai">Chennai</option>
+                                        <option id="L" value="Paris">Paris</option>
+                                        <option id="L" value="Oxford">Oxford</option>
+                                    </select>
+                                    <br>
+                                    <!-- <button class="btn btn-light btn-xl js-scroll-trigger" style="margin-left:-250px; width: 200px; display:inline; height:40px" onclick="myFunction()">select</button> -->
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <br>
+                                <h1 style="text-align:start;  font-size:18px; height:10px; color:black;">Payout Currency</h1>
+                                <br>
+                                <div class="dropdown">
+                                    <select id="cr" style=" margin-left:-150px; width: 200px; display:inline; height:30px" onclick="myCurrency()">
+                                        <option id="" value="">-------select--------</option>
+                                        <option id="cr" value="INR">INR</option>
+                                        <option id="cr" value="CHF">CHF</option>
+                                        <option id="cr" value="NZD">NZD</option>
+                                        <option id="cr" value="EUR">EUR</option>
+                                    </select>
+                                    <br>
+                                    <!-- <button class="btn btn-light btn-xl js-scroll-trigger" style="margin-left:-250px; width: 200px; display:inline; height:40px" onclick="myCurrency()">select</button> -->
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <br>
+                            <div class="col-sm-9">
+                                <br>
+                                <h1 style="text-align:start;  font-size:18px; height:10px; color:black;">Days</h1>
+                                <!-- <a style="text-align:start;  color: rgb(5, 0, 0)">0</a><a style="color: rgb(5, 0, 0)"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="color: rgb(5, 0, 0)">365</a>
+                                <a style="color: rgb(5, 0, 0)"></a> -->
+                                <br>
+                                <input type="range" class="slider" name="rangeInput" min="0" max="365" style="margin-left:-10px; width: 550px;" onchange="updateTextInput(this.value);">
+                                <br>
+                            </div>
+                            <div class="col-sm-3">
+                                <br>
+                                <br>
+                                <br>
+                                <input class="btn btn-light btn-xl js-scroll-trigger" class="form-control" style="width: 150px; height:30px;" type="text" id="textInput" name="textInput" value="">
+                                <br>
+                            </div>
+                        </div>
+
+                        <br>
+                        <button class="btn btn-light btn-xl sr-button" id="submit" name="submit" value="submit">Create contract</button>
+                    </div>
+
+                    <br/>
+                    <br/>
+
+                    <a class="btn btn-light btn-xl sr-button" href="#services">Get Deatils</a>
+
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Your Contract Details</h2>
+                    <hr class="my-4">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box mt-5 mx-auto">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" cellspacing="0">
+                                    <thead>
+                                        <tr>
+
+                                            <th>Contract Address</th>
+                                            <th>policy</th>
+                                            <th>Amountpaid</th>
+                                            <th>Location</th>
+                                            <th>date</th>
+                                            <th>currency</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td id=td1></td>
+                                            <td id=td2></td>
+                                            <td id=td3></td>
+                                            <td id=td4></td>
+                                            <td id=td5></td>
+                                            <td id=td6></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="p-0" id="portfolio">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters popup-gallery">
+                <div class="col-lg-4 col-sm-6">
+
+                </div>
+                <div class="col-lg-4 col-sm-6">
+
+                </div>
+                <div class="col-lg-4 col-sm-6">
+
+                </div>
+                <div class="col-lg-4 col-sm-6">
+
+                </div>
+                <div class="col-lg-4 col-sm-6">
+
+                </div>
+                <div class="col-lg-4 col-sm-6">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dark text-white">
+        <div class="container text-center">
+            <h2 class="section-heading">Claim Details</h2>
+
+            <hr class="my-4">
+            <div class="box1">
+                   
+                <br>
+                <br>
+                <br>
+                <div class="card-body">
+                <div class="table-responsive1">
+                        <table class="table table-bordered" id="dataTable1" cellspacing="0">
+                            <thead>
+                                <tr>
+                                      
+                                    <th>Name</th>
+                                    <th>policyno</th>
+                                    <th>premium</th>
+                                    <th>Location</th>
+                                    <th>date</th>
+                                    <th>plan</th>
+                                    <th>status</th>
+                                    <th>payoutCurrency</th>
+
+                                </tr>
+                            </thead>
+                            <tbody id="tbody1" >
+                                <tr>
+                                    
+                                    <td id=td11></td>
+                                    <td id=td13></td>
+                                    <td id=td14></td>
+                                    <td id=td12></td>
+                                    <td id=td16></td>
+                                    <td id=td15></td>
+                                    <td id=td10></td>
+                                    <td id=td17></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+            </div>
+            <br>
+            <!-- <button class="btn btn-light btn-xl sr-button" id="takeData" name="takeData" value="takeData" >get weatherData</button> -->
+        </div>
+        </div>
+    </section>
+
+    <!-- <section id="help">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-heading">Claim Details</h2>
+                    <hr class="my-4">
+                    <div class="box1">
+                    <table  class="insurer"  id="tems1">
+                            <thead >
+
+                                <tr>  
+                                        <th><b style="color: #212529">Insured:</b></th>
+                                        <td id="td00"></td>
+                                </tr>
+                                <tr>
+                                        <th><b style="color: #212529">PolicyNo:</b></th>
+                                        <td id="td01"></td>
+                                </tr>
+                                <tr>
+                                        <th><b style="color: #212529">Premium Amount:</b></th>
+                                        <td id="td02"></td>
+                                </tr>
+                                <tr>    
+                                        <th><b style="color: #212529">Claim Amount:</b></th> 
+                                        <td id="td03"></td>
+                                </tr>
+                                <tr>
+                                        <th><b style="color: #212529">InsurerA Amount:</b></th>
+                                        <td id="td04"></td>
+                                </tr>
+                                <tr>
+                                        <th><b style="color: #212529">InsurerB Amount:</b></th>
+                                        <td id="td05"></td>
+                                </tr>
+
+                            </thead>
+                    </table>
+                    </div>
+                    <p class="mb-5"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 ml-auto text-center">
+
+                </div>
+                <div class="col-lg-4 mr-auto text-center">
+
+                </div>
+            </div>
+        </div>
+    </section>  -->
+
+    <!-- <section class="bg-dark text-white" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-heading">Foreign Exchange Rate</h2>
+                    <hr class="my-4">
+                    <p class="mb-5"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 ml-auto text-center">
+
+                </div>
+                <div class="col-lg-4 mr-auto text-center">
+
+                </div>
+            </div>
+        </div>
+    </section>  -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+
+</body>
+
+</html>
+
+<script>
+    function myFunction() {
+        var location = document.getElementById("L").value;
+        console.log("lol------->", location);
+    }
+</script>
+
+<script>
+    function myCurrency() {
+        var fx = document.getElementById("cr").value;
+        console.log("lol------->", fx);
+    }
+</script>
+
+<script>
+    var date_range;
+
+    function updateTextInput(val) {
+        date_range = document.getElementById('textInput').value = val;
+    }
+
+    $(document).ready(function() {
+
+        $("#submit").click(function(val) {
+            date_range;
+            var location = $("#L").val();
+            var fx = $("#cr").val();
+            var min_set_amt = $("#ICNB").val();
+            var plans = [];
+            $.each($("input[name='policy']:checked"), function() {
+                plans.push($(this).val());
+            });
+            console.log("policy selected:" + plans.join(", "));
+            console.log("12222", plans)
+            var datastring = {
+                "date_range": date_range,
+                "location": location,
+                "fx": fx,
+                "plans": plans,
+                "min_set_amt": min_set_amt
+            }
+            $.ajax({
+                type: "POST",
+                url: "http://192.168.0.26:3006/createContract",
+                contentType: 'application/json',
+
+                data: JSON.stringify(datastring),
+
+                success: function(html) {
+                    console.log(html);
+                    if (html.message == 'contract saved to blockchain successfully !') {
+                        window.alert("contract saved to blockchain successfully !")
+                    } else {
+                        $("#submit").html("<img src='alert.png' />Wrong username or password");
+                    }
+                },
+                beforeSend: function() {
+
+                    $("#loading").html("<img src='giphy.gif' /> Loading...")
+                }
+            });
+            return false;
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function() {
+
+        window.onload = getdata();
+
+        function getdata() {
+
+            $.ajax({
+                url: "http://192.168.0.26:3006/getContract",
+                method: "GET",
+                contentType: 'application/json',
+
+                success: function(message) {
+                    console.log("line number 669---->", message)
+
+                    var mydata = [];
+                    console.log("lol----", mydata)
+
+                    var address = message.message.address;
+
+                    var date = message.message.date_range;
+
+                    var fx = message.message.fx;
+
+                    var location = message.message.location;
+
+                    var min_amount = message.message.min_set_amt;
+
+                    var policyplans = message.message.plans;
+
+                    mydata.push({
+                        "address": address,
+                        "date": date,
+                        "currency": fx,
+                        "location": location,
+                        "amountpaid": min_amount,
+                        "policy": policyplans
+                    });
+
+                    console.log("length:" + mydata.length)
+                    for (var i = 0; i < mydata.length; i++) {
+                        var getData = [];
+
+                        var td1 = mydata[i]["address"];
+                        console.log("line number 704--->", td1);
+                        var td2 = mydata[i]["date"];
+                        var td3 = mydata[i]["currency"];
+                        var td4 = mydata[i]["location"];
+                        var td5 = mydata[i]["amountpaid"];
+                        var td6 = mydata[i]["policy"];
+                        var tablerow = "<tr> <td>" + td1 + "</td><td>" + td6 + "</td><td>" + td5 + "</td><td>" + td4 + "</td><td>" + td2 + "</td><td>" + td3 + "</td></tr>"
+
+                        console.log(i)
+                        $('#dataTable').append(tablerow)
+
+                    }
+
+                }
+
+            })
+        }
+    });
+</script>
+
+<script>
+     $(document).ready(function() {
+
+        window.onload = getdata();
+
+        function getdata() {
+     $.ajax({
+                url: "http://192.168.0.26:3006/trigger",
+                method: "GET",
+                contentType: 'application/json',
+
+                success: function(message) {
+                    console.log("lolwa--------->",message)
+
+                    var mydata1 = [];
+                    console.log("lol----", mydata1)
+                           
+               
+                    for (var j=0; j<message.passed.length; j++){
+                        var estatus = message.passed[j].status;
+                        console.log("lololao",estatus)
+                      
+                        var names =message.passed[j].User.name;
+                        console.log("data-----",names);
+                        var dates = message.passed[j].User.date;
+                        
+
+                        var locations = message.passed[j].User.location;
+      
+                        var policynumber = message.passed[j].User.policyno;
+                         
+                        var plans= message.passed[j].User.plan;
+
+                        var premiumdata = message.passed[j].User.premium;
+
+                        var currency=message.passed[j].rates;
+                        console.log("data----",currency)
+                        
+                        mydata1.push({
+                            "name":names,
+                            "date":dates,
+                            "location":locations,
+                            "policy":policynumber,
+                            "plan":plans,
+                            "premium":premiumdata,
+                            "status":estatus,
+                            "currency":currency
+                        });
+                   
+                      }
+                   
+                    console.log("length:"+mydata1.length)
+                  for (var i = 0; i < mydata1.length; i++) {
+                      var getData=[];
+                      
+                      var td11 = mydata1[i]["name"];
+                      console.log("line number 704--->",td11);
+                      var td12 = mydata1[i]["date"];
+                      var td13 = mydata1[i]["location"];
+                      var td14 = mydata1[i]["policy"];
+                      var td15 = mydata1[i]["plan"];
+                      var td16 = mydata1[i]["premium"];
+                      var td10 = mydata1[i]["status"];
+                      var td17 = mydata1[i]["currency"];
+                      //getData.push({  })
+
+                      var tablerow = "<tr><td>"+td11 + "</td><td>"+ td14+ "</td><td>"+td16 + "</td><td>"+ td13 + "</td><td>"+ td12 + "</td><td>"+ td15+"</td><td>"+td10+"</td><td>"+td17+"</td></tr>"
+                      
+                      console.log(i)
+                      $('#dataTable1').find('#tbody1').append(tablerow)
+
+                  }
+                
+
+                }
+
+            });
+
+    }
+    })
+</script>
