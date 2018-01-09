@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" href="doctor.ico">
-    <title>Mediclaim</title>
+    <title>Healthcare</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -95,7 +95,7 @@
                             <div class="col-sm-6">
                                 <br>
                                 <br>
-                                <h1 style="color:black; margin-left:-220px;">select plans</h1>
+                                <a style="color:black; margin-left:-240px; font-size:18px;">select plans</a>
                                 <div class="checkbox">
 
                                     <label>
@@ -122,7 +122,7 @@
                              
                                 <br>
                                <br>
-                                <a style="color:black; margin-left:-210px;">minimum Amount</a>
+                                <a style="color:black; margin-left:-200px; font-size:18px;">minimum Amount</a>
                                 <br>
                                 <br>
                                 <input class="form-control" style=" height:30px; width:55%; margin-left:10px;" type="text" id="ICNB" name="ICNB" placeholder="Amount in $"></input>
@@ -132,26 +132,25 @@
                         <div class="row">
                             <div class="col-sm-6">
                                 <br>
-                                <h1 style="text-align:start;  font-size:18px; height:10px; color:black;">Location</h1>
+                                <a style="text-align:start; margin-left:-250px; font-size:18px; height:10px; color:black;">Providers</a>
                                 <br>
-
                                 <div class="dropdown">
 
-                                    <select id="L" style=" margin-left:-150px; width: 200px; display:inline; height:30px" onclick="myFunction()">
-                                        <option id="" value="">-------select--------</option>
-                                        <option id="L" value="London">London</option>
-                                        <option id="L" value="Delhi">Delhi</option>
-                                        <option id="L" value="Goa">Goa</option>
-                                        <option id="L" value="Chennai">Chennai</option>
-                                        <option id="L" value="Paris">Paris</option>
-                                        <option id="L" value="Oxford">Oxford</option>
+                                    <select id="L" style=" margin-left:-90px; width: 250px; display:inline; height:30px" onclick="myFunction()">
+                                        <option id="" value="">---------select--------</option>
+                                        <option id="L" value="Good Samaritan Hospital">Good Samaritan Hospital</option>
+                                        <option id="L" value="Los Angeles Community Hospital">Los Angeles Community Hospital</option>
+                                        <option id="L" value="Ronald Reagan UCLA Medical Center">Ronald Reagan UCLA Medical Center</option>
+                                        <option id="L" value="East Los Angeles Doctors">East Los Angeles Doctors</option>
+                                        <option id="L" value="Gatways Hospital and Mental Health Center">Gatways Hospital and Mental Health Center</option>
+                                        
                                     </select>
                                     <br>
                                     <!-- <button class="btn btn-light btn-xl js-scroll-trigger" style="margin-left:-250px; width: 200px; display:inline; height:40px" onclick="myFunction()">select</button> -->
                                 </div>
                             </div>
 
-                            <div class="col-sm-6">
+                            <!-- <div class="col-sm-6">
                                 <br>
                                 <h1 style="text-align:start;  font-size:18px; height:10px; color:black;">Payout Currency</h1>
                                 <br>
@@ -165,19 +164,21 @@
                                     </select>
                                     <br>
                                     <!-- <button class="btn btn-light btn-xl js-scroll-trigger" style="margin-left:-250px; width: 200px; display:inline; height:40px" onclick="myCurrency()">select</button> -->
-                                </div>
-                            </div>
+                                <!-- </div>
+                            </div>  -->
 
                         </div>
                         <div class="row">
                             <br>
                             <div class="col-sm-9">
                                 <br>
-                                <h1 style="text-align:start;  font-size:18px; height:10px; color:black;">Days</h1>
+
+    
+                                <a style="text-align:start;  margin-left:-410px;  font-size:18px; height:10px; color:black;">Minimum Days</a>
                                 <!-- <a style="text-align:start;  color: rgb(5, 0, 0)">0</a><a style="color: rgb(5, 0, 0)"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="color: rgb(5, 0, 0)">365</a>
                                 <a style="color: rgb(5, 0, 0)"></a> -->
                                 <br>
-                                <input type="range" class="slider" name="rangeInput" min="0" max="365" style="margin-left:-10px; width: 550px;" onchange="updateTextInput(this.value);">
+                                <input type="range" class="slider" name="rangeInput" min="0" max="365" style="margin-left:2px; width: 550px;" onchange="updateTextInput(this.value);">
                                 <br>
                             </div>
                             <div class="col-sm-3">
@@ -225,11 +226,11 @@
                                         <tr>
 
                                             <th>Contract Address</th>
-                                            <th>policy</th>
+                                            <th>Plans</th>
                                             <th>Amountpaid</th>
                                             <th>Location</th>
-                                            <th>date</th>
-                                            <th>currency</th>
+                                            <th>Days</th>
+                                            <!-- <th>Currency</th> -->
 
                                         </tr>
                                     </thead>
@@ -240,7 +241,7 @@
                                             <td id=td3></td>
                                             <td id=td4></td>
                                             <td id=td5></td>
-                                            <td id=td6></td>
+                                            <!-- <td id=td6></td> -->
                                         </tr>
                                     </tbody>
                                 </table>
@@ -442,7 +443,7 @@
         $("#submit").click(function(val) {
             date_range;
             var location = $("#L").val();
-            var fx = $("#cr").val();
+            // var fx = $("#cr").val();
             var min_set_amt = $("#ICNB").val();
             var plans = [];
             $.each($("input[name='policy']:checked"), function() {
@@ -453,7 +454,7 @@
             var datastring = {
                 "date_range": date_range,
                 "location": location,
-                "fx": fx,
+                // "fx": fx,
                 "plans": plans,
                 "min_set_amt": min_set_amt
             }
@@ -504,7 +505,7 @@
 
                     var date = message.message.date_range;
 
-                    var fx = message.message.fx;
+                    // var fx = message.message.fx;
 
                     var location = message.message.location;
 
@@ -515,7 +516,7 @@
                     mydata.push({
                         "address": address,
                         "date": date,
-                        "currency": fx,
+                        // "currency": fx,
                         "location": location,
                         "amountpaid": min_amount,
                         "policy": policyplans
@@ -528,11 +529,11 @@
                         var td1 = mydata[i]["address"];
                         console.log("line number 704--->", td1);
                         var td2 = mydata[i]["date"];
-                        var td3 = mydata[i]["currency"];
+                        // var td3 = mydata[i]["currency"];
                         var td4 = mydata[i]["location"];
                         var td5 = mydata[i]["amountpaid"];
                         var td6 = mydata[i]["policy"];
-                        var tablerow = "<tr> <td>" + td1 + "</td><td>" + td6 + "</td><td>" + td5 + "</td><td>" + td4 + "</td><td>" + td2 + "</td><td>" + td3 + "</td></tr>"
+                        var tablerow = "<tr> <td>" + td1 + "</td><td>" + td6 + "</td><td>" + td5 + "</td><td>" + td4 + "</td><td>" + td2 + "</td></tr>"
 
                         console.log(i)
                         $('#dataTable').append(tablerow)

@@ -442,7 +442,7 @@
     .box1{
         position: relative;
         margin-left: 00px;
-        height:680px;
+        height:1000px;
         top: 40px;
         left: 0;
         z-index: 200;
@@ -528,6 +528,6 @@
         font-family: sans-serif, ;
         border-collapse: collapse;
         width: 250%;
-        margin-left: -120px;
+        margin-left: -150px;
         overflow-x: hidden;
     }
