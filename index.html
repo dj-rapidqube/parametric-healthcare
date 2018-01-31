@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" type="image/png" href="doctor.ico">
-    <title>Healthcare</title>
+    <link rel="icon" type="image/png" href="icon1.png">
+    <title>Parametric</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -24,7 +24,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/creative.min.css" rel="stylesheet">
-
+    
 </head>
 
 <body id="page-top">
@@ -32,7 +32,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" style="color:black" href="#page-top">Rapidqube</a>
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">Rapidqube</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -63,13 +63,13 @@
             <div class="row">
                 <div class="col-lg-10 mx-auto">
                     <h1 class="text-uppercase">
-              <strong  style="color:black" >Parametric Healthcare</strong>
+              <strong>Parametric Insurance</strong>
             </h1>
                     <hr>
                 </div>
                 <div class="col-lg-8 mx-auto">
-                    <!-- <p class="text-faded mb-5">Create Contract </p> -->
-                    <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">create contract</a>
+                    <p class="text-faded mb-5">create Insurance </p>
+                    <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">create one</a>
                 </div>
             </div>
         </div>
@@ -77,85 +77,89 @@
 
     <section class="bg-primary" id="about">
         <div class="container">
+            
 
             <div class="row">
 
                 <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="section-heading text-white">Parameters</h2>
+                    <h2 class="section-heading text-white">Insurance Parameters</h2>
                     <hr class="light my-4">
-
+                   
                     <div class="box">
 
                         <div id="header">
-
+                                
                         </div>
                         <h1 class="section-heading text-dark"><b>Contract Form</b></h1>
+                       
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <br>
+                                <input class="form-control" style=" height:30px; width:50%" type="text" id="ICNA" name="ICNA" placeholder="Insurer A"></input>
+                            </div>
+                            <div class="col-sm-6">
+                                <br>
 
+                                <input class="form-control" style=" height:30px; width:50%" type="text" id="EA" name="EA" placeholder="Insurer A Email"></input>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-sm-6">
                                 <br>
                                 <br>
-                                <a style="color:black; margin-left:-240px; font-size:18px;">select plans</a>
-                                <div class="checkbox">
-
-                                    <label>
-                                        <input type="checkbox" style="margin-left:-252px;" id="policy" value="Medi-Cal" name="policy"> Medi-Cal</label>
-                                    <br>
-                                    <label>
-                                        <input type="checkbox" style="margin-left:-194px;" id="policy" value="L.A.CareCovered" name="policy">L.A. Care Covered</label>
-                                    <br>
-                                    <label>
-                                        <input type="checkbox" style="margin-left:-197px;" id="policy" value="PASC-SEIU-Plan" name="policy"> PASC-SEIU Plan</label>
-                                    <br>
-                                    <label>
-                                        <input type="checkbox" style="margin-left:-197px;" id="policy" value="Cal-MediConnect" name="policy"> Cal MediConnect</label>
-
-                                    <!-- <button type="button" style=" margin-left:30px; width: 200px; display:inline; ">Select</button> -->
-                                    <!-- </select> -->
-
-                                </div>
+                                <input class="form-control" style=" height:30px; width:50%" type="text" id="ICNB" name="ICNB" placeholder="InsurerB"></input>
                             </div>
-                            <br>
-                            <br>
-                         
                             <div class="col-sm-6">
-                             
-                                <br>
-                               <br>
-                                <a style="color:black; margin-left:-200px; font-size:18px;">minimum Amount</a>
                                 <br>
                                 <br>
-                                <input class="form-control" style=" height:30px; width:55%; margin-left:10px;" type="text" id="ICNB" name="ICNB" placeholder="Amount in $"></input>
+                                <input class="form-control text-black" style=" height:30px; width:50% " type="text" id="EB" name="EB" placeholder="Insurer B Email"></input>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <br>
+                                <br>
+                                <input class="form-control" style=" height:30px; width:50%" type="text" id="IN" name="IN" placeholder="Insured "></input>
+                            </div>
+                            <div class="col-sm-6">
+                                <br>
+                                <br>
+                                <input class="form-control" style=" height:30px; width:50%" type="text" id="IE" name="IE" placeholder="Insured Email"></input>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <br>
+                                <br>
+                                <input class="form-control" style=" height:30px; width:50% " type="text" id="I" name="I" placeholder="Insurance of"></input>
+                                <br>
                             </div>
 
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
                                 <br>
-                                <a style="text-align:start; margin-left:-250px; font-size:18px; height:10px; color:black;">Providers</a>
+                                <h1 style="text-align:start;  font-size:18px; height:10px; color:black;">Location</h1>
                                 <br>
                                 <div class="dropdown">
-
-                                    <select id="L" style=" margin-left:-90px; width: 250px; display:inline; height:30px" onclick="myFunction()">
-                                        <option id="" value="">---------select--------</option>
-                                        <option id="L" value="Good Samaritan Hospital">Good Samaritan Hospital</option>
-                                        <option id="L" value="Los Angeles Community Hospital">Los Angeles Community Hospital</option>
-                                        <option id="L" value="Ronald Reagan UCLA Medical Center">Ronald Reagan UCLA Medical Center</option>
-                                        <option id="L" value="East Los Angeles Doctors">East Los Angeles Doctors</option>
-                                        <option id="L" value="Gatways Hospital and Mental Health Center">Gatways Hospital and Mental Health Center</option>
-                                        
+                                    <select id="L" style=" margin-left:-250px; width: 200px; display:inline; height:30px" onclick="myFunction()">
+                                        <option id="" value="">-------select--------</option>
+                                        <option id="L" value="London">London</option>
+                                        <option id="L" value="Delhi">Delhi</option>
+                                        <option id="L" value="Goa">Goa</option>
+                                        <option id="L" value="Chennai">Chennai</option>
+                                        <option id="L" value="Paris">Paris</option>
+                                        <option id="L" value="Oxford">Oxford</option>
                                     </select>
                                     <br>
                                     <!-- <button class="btn btn-light btn-xl js-scroll-trigger" style="margin-left:-250px; width: 200px; display:inline; height:40px" onclick="myFunction()">select</button> -->
                                 </div>
                             </div>
-
-                            <!-- <div class="col-sm-6">
+                            <div class="col-sm-6">
                                 <br>
                                 <h1 style="text-align:start;  font-size:18px; height:10px; color:black;">Payout Currency</h1>
                                 <br>
                                 <div class="dropdown">
-                                    <select id="cr" style=" margin-left:-150px; width: 200px; display:inline; height:30px" onclick="myCurrency()">
+                                    <select id="cr" style=" margin-left:-250px; width: 200px; display:inline; height:30px" onclick="myCurrency()">
                                         <option id="" value="">-------select--------</option>
                                         <option id="cr" value="INR">INR</option>
                                         <option id="cr" value="CHF">CHF</option>
@@ -164,21 +168,19 @@
                                     </select>
                                     <br>
                                     <!-- <button class="btn btn-light btn-xl js-scroll-trigger" style="margin-left:-250px; width: 200px; display:inline; height:40px" onclick="myCurrency()">select</button> -->
-                                <!-- </div>
-                            </div>  -->
-
+                                </div>
+                            </div>
                         </div>
                         <div class="row">
                             <br>
                             <div class="col-sm-9">
                                 <br>
-
-    
-                                <a style="text-align:start;  margin-left:-410px;  font-size:18px; height:10px; color:black;">Minimum Days</a>
-                                <!-- <a style="text-align:start;  color: rgb(5, 0, 0)">0</a><a style="color: rgb(5, 0, 0)"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="color: rgb(5, 0, 0)">365</a>
-                                <a style="color: rgb(5, 0, 0)"></a> -->
+                                <h1 style="text-align:start;  font-size:18px; height:10px; color:black;">Risk Sharing</h1>
                                 <br>
-                                <input type="range" class="slider" name="rangeInput" min="0" max="365" style="margin-left:2px; width: 550px;" onchange="updateTextInput(this.value);">
+                                <a style="text-align:start;  color: rgb(5, 0, 0)">0%</a><a style="color: rgb(5, 0, 0)">partyA</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="color: rgb(5, 0, 0)">100%</a>
+                                <a style="color: rgb(5, 0, 0)">partyB</a>
+                                <br>
+                                <input type="range" class="slider" name="rangeInput" min="0" max="100" style="margin-left:-150px; width: 550px;" onchange="updateTextInput(this.value);">
                                 <br>
                             </div>
                             <div class="col-sm-3">
@@ -189,6 +191,69 @@
                                 <br>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <br>
+                                <h1 style="text-align:start;  font-size:18px; height:10px; color:black;" for="E"> EarthQuake In Richter scale </label>
+                                        <br>
+                                        <a style="color: rgb(5, 0, 0)"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                        <a style="color: rgb(5, 0, 0)"><b>10</b></a>
+                                        <input type="range" class="slider" name="rangeInput" min="0" max="10" style=" width: 550px;" onchange="updateTextInput1(this.value);">
+                            </div>
+                            <div class="col-sm-3">
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <input  class="btn btn-light btn-xl js-scroll-trigger" style="width: 150px; height:30px;" type="text" id="textInput1" name="textInput1" value="">
+                                        <br>
+                                        <a class="section-heading text-black">* If earthquake is above specified Richter scale contract will get triggered.</a>   
+                            </div>
+                        </div>                                       
+                        <div class="row">
+                                    <div class="col-sm-9">
+                                        <br>
+                                        <h1 style="text-align:start;  font-size:18px; height:10px; color:black;" for="W">Wind speed In knot</h1>
+                                <br>
+                                <a style="color: rgb(5, 0, 0)"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                
+                                <a style="color: rgb(5, 0, 0)">100</a>
+                                <input type="range" class="slider" name="rangeInput" min="0" max="100" style="margin-left:-150px; width: 550px;" onchange="updateTextInput2(this.value);">
+                                <br>
+                            </div>
+                            <div class="col-sm-3">
+                                <br>
+                                <br>
+                                <br>
+                                <input class="btn btn-light btn-xl js-scroll-trigger" style="width: 150px; height:30px;" type="text" id="textInput2" name="textInput2" value="">
+                                <br>
+                                <a class="section-heading text-black">* If wind speed exceeds specified knot contract will get triggered.</a>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <br>
+                                <h1 style="text-align:start;  font-size:18px; height:10px; color:black;" for="R">Rain In milimeter</h1>
+                                <br>
+                                <br>
+                                <a style="color: rgb(5, 0, 0)"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                <a style="color: rgb(5, 0, 0)">1000</a>
+                                <input type="range" class="slider" name="rangeInput" min="0" max="1000" style="margin-left:-155px; width: 550px;" onchange="updateTextInput3(this.value);">
+                                <br>
+                            </div>
+                            <div class="col-sm-3">
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <input class="btn btn-light btn-xl js-scroll-trigger" style="width: 150px; height:30px;" type="text" id="textInput3" name="textInput3" value="">
+                                <br>
+                                <a class="section-heading text-black">* If Rain fall exceeds specified milimeter contract will get triggered.</a>
+                                <br>
+                            </div>
+                        </div>
 
                         <br>
                         <button class="btn btn-light btn-xl sr-button" id="submit" name="submit" value="submit">Create contract</button>
@@ -196,14 +261,41 @@
 
                     <br/>
                     <br/>
+                    <div id="feedback">
+                            <div id="feedback-form" style='display:none;' class="col-xs-4 col-md-4 panel panel-default">
+                                <ul>
 
+                                        <p style="color: #fff">Temprature:</p>
+                                        <a style="color: #fff" id="td11"></a>
+                                        
+                                        <p style="color: #fff">Temp-Max:</p>
+                                        <a style="color: #fff" id="td12"></a>
+                                        
+                                        <p style="color: #fff">Temp-Min:</p>
+                                        <a style="color: #fff" id="td13"></a>
+                                        
+                                        <p style="color: #fff">QuakeRatio:</p>
+                                        <a style="color: #fff" id="td14"></a>
+                                        
+                                        <p style="color: #fff">windspeed:</p>
+                                        <a style="color: #fff" id="td15"></a>
+                                        
+                                        <p style="color: #fff">Rain:</p>
+                                        <a style="color: #fff" id="td16"></a>
+                                        
+                                </ul>   
+                               <!-- <b style="color: #fff"> © Oracle</b> -->
+                            </div>
+                            <div id="feedback-tab" >WeatherData</div>
+                        </div>
+                    <!--<div id="footer-box"><!--<p class="footer-text">Not a member?<span class="sign-up"{{action 'signup'}}> Sign up now</span></p></div>-->
                     <a class="btn btn-light btn-xl sr-button" href="#services">Get Deatils</a>
 
                 </div>
             </div>
         </div>
         </div>
-
+       
     </section>
 
     <section id="services">
@@ -219,34 +311,71 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box mt-5 mx-auto">
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-bordered" id="dataTable" cellspacing="0">
-                                    <thead>
-                                        <tr>
+                        <table class="table" id="itemList">
+                            <thead>
 
-                                            <th>Contract Address</th>
-                                            <th>Plans</th>
-                                            <th>Amountpaid</th>
-                                            <th>Location</th>
-                                            <th>Days</th>
-                                            <!-- <th>Currency</th> -->
+                                <tr>
+                                    <th><b>Contract Address:</b></th>
+                                    <td id="td1"></td>
+                                </tr>
+                                <tr>
+                                    <th><b>Insurer A Risk Sharing:</b></th>
+                                    <td id="td2"></td>
+                                </tr>
+                                <tr>
+                                    <th><b>Insurer B Risk Sharing:</b></th>
+                                    <td id="td3"></td>
+                                </tr>
+                                <tr>
+                                    <th><b>Location:</b></th>
+                                    <td id="td4"></td>
+                                </tr>
+                                <tr>
+                                    <th><b>Rain in mm Ratio:</b></th>
+                                    <td id="td5"></td>
+                                </tr>
+                                <tr>
+                                    <th><b>Wind Speed:</b></th>
+                                    <td id="td6"></td>
+                                </tr>
+                                <tr>
+                                    <th><b>Earthquake ratio:</b></th>
+                                    <td id="td7"></td>
+                                </tr>
+                                <tr>
+                                    <th><b>Insurance for:</b></th>
+                                    <td id="td8"></td>
+                                </tr>
+                                <tr>
+                                    <th><b>InsurerA:</b></th>
+                                    <td id="td221"></td>
+                                </tr>
+                                <tr>
+                                    <th><b>InsurerA Email:</b></th>
+                                    <td id="td9"></td>
+                                </tr>
+                                <tr>
+                                    <th><b>InsurerB:</b></th>
+                                    <td id="td222"></td>
+                                </tr>
+                                <tr>
+                                    <th><b>InsurerB Email:</b></th>
+                                    <td id="td10"></td>
+                                </tr>
+                                <tr>
+                                    <th><b>Insured:</b></th>
+                                    <td id="td111"></td>
+                                </tr>
+                                <tr>
+                                    <th><b>InsuredEmail:</b></th>
+                                    <td id="td121"></td>
+                                </tr>
 
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td id=td1></td>
-                                            <td id=td2></td>
-                                            <td id=td3></td>
-                                            <td id=td4></td>
-                                            <td id=td5></td>
-                                            <!-- <td id=td6></td> -->
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
 
                     </div>
                 </div>
@@ -286,46 +415,47 @@
 
             <hr class="my-4">
             <div class="box1">
-                   
+               
                 <br>
                 <br>
                 <br>
-                <div class="card-body">
-                <div class="table-responsive1">
-                        <table class="table table-bordered" id="dataTable1" cellspacing="0">
-                            <thead>
-                                <tr>
-                                      
-                                    <th>Name</th>
-                                    <th>policyno</th>
-                                    <th>premium</th>
-                                    <th>Location</th>
-                                    <th>date</th>
-                                    <th>plan</th>
-                                    <th>status</th>
-                                    <th>payoutCurrency</th>
+                <table class="insurer" id="tems1">
+                    <thead>
 
-                                </tr>
-                            </thead>
-                            <tbody id="tbody1" >
-                                <tr>
-                                    
-                                    <td id=td11></td>
-                                    <td id=td13></td>
-                                    <td id=td14></td>
-                                    <td id=td12></td>
-                                    <td id=td16></td>
-                                    <td id=td15></td>
-                                    <td id=td10></td>
-                                    <td id=td17></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                        <tr>
+                            <th><b style="color: #212529">Insured:</b></th>
+                            <td id="td00"></td>
+                        </tr>
+                        <tr>
+                            <th><b style="color: #212529">PolicyNo:</b></th>
+                            <td id="td01"></td>
+                        </tr>
+                        <tr>
+                            <th><b style="color: #212529">Premium Amount:</b></th>
+                            <td id="td02"></td>
+                        </tr>
+                        <tr>
+                            <th><b style="color: #212529">Claim Amount:</b></th>
+                            <td id="td03"></td>
+                        </tr>
+                        <tr>
+                            <th><b style="color: #212529">InsurerA Amount:</b></th>
+                            <td id="td04"></td>
+                        </tr>
+                        <tr>
+                            <th><b style="color: #212529">InsurerB Amount:</b></th>
+                            <td id="td05"></td>
+                        </tr>
+                        <!-- <tr>
+                                        <th><b style="color: #212529">partyC_amt:</b></th>
+                                        <td id="td06"></td>
+                                </tr> -->
+
+                    </thead>
+                </table>
             </div>
             <br>
             <!-- <button class="btn btn-light btn-xl sr-button" id="takeData" name="takeData" value="takeData" >get weatherData</button> -->
-        </div>
         </div>
     </section>
 
@@ -432,35 +562,66 @@
 </script>
 
 <script>
-    var date_range;
+    var partyA;
 
     function updateTextInput(val) {
-        date_range = document.getElementById('textInput').value = val;
+        partyA = document.getElementById('textInput').value = val;
+    }
+
+    var earthquake;
+
+    function updateTextInput1(val) {
+        earthquake = document.getElementById('textInput1').value = val;
+    }
+
+    var wind;
+
+    function updateTextInput2(val) {
+        wind = document.getElementById('textInput2').value = val;
+    }
+
+    var rain;
+
+    function updateTextInput3(val) {
+        rain = document.getElementById('textInput3').value = val;
     }
 
     $(document).ready(function() {
 
         $("#submit").click(function(val) {
-            date_range;
+            partyA;
+            var partyB = 100 - partyA;
             var location = $("#L").val();
-            // var fx = $("#cr").val();
-            var min_set_amt = $("#ICNB").val();
-            var plans = [];
-            $.each($("input[name='policy']:checked"), function() {
-                plans.push($(this).val());
-            });
-            console.log("policy selected:" + plans.join(", "));
-            console.log("12222", plans)
+            var fx = $("#cr").val();
+            wind;
+            earthquake;
+            var insurance = $("#I").val();
+            rain;
+            var insuranceCompanyA = $("#ICNA").val();
+            var emailA = $("#EA").val();
+            var insuranceCompanyB = $("#ICNB").val();
+            var emailB = $("#EB").val();
+            var insurerName = $("#IN").val();
+            var insurerEmail = $("#IE").val();
             var datastring = {
-                "date_range": date_range,
+                "partyA": partyA,
+                "partyB": partyB,
                 "location": location,
-                // "fx": fx,
-                "plans": plans,
-                "min_set_amt": min_set_amt
+                "fx": fx,
+                "wind": wind,
+                "earthquake": earthquake,
+                "insurance": insurance,
+                "rain": rain,
+                "insuranceCompanyA": insuranceCompanyA,
+                "emailA": emailA,
+                "insuranceCompanyB": insuranceCompanyB,
+                "emailB": emailB,
+                "insurerName": insurerName,
+                "insurerEmail": insurerEmail
             }
             $.ajax({
                 type: "POST",
-                url: "http://192.168.0.26:3006/createContract",
+                url: "http://119.81.59.59:3006/createContract",
                 contentType: 'application/json',
 
                 data: JSON.stringify(datastring),
@@ -486,75 +647,107 @@
 <script>
     $(document).ready(function() {
 
-        window.onload = getdata();
+        window.onload = getdata;
 
         function getdata() {
 
             $.ajax({
-                url: "http://192.168.0.26:3006/getContract",
+                url: "http://119.81.59.59:3006/getContract",
                 method: "GET",
                 contentType: 'application/json',
 
                 success: function(message) {
-                    console.log("line number 669---->", message)
+                    console.log("lolololo0", message)
 
                     var mydata = [];
                     console.log("lol----", mydata)
+                    var partyA = JSON.stringify(message.message.partyA);
 
-                    var address = message.message.address;
+                    var partyB = JSON.stringify(message.message.partyB);
 
-                    var date = message.message.date_range;
+                    var location = JSON.stringify(message.message.location);
 
-                    // var fx = message.message.fx;
+                    var rain = JSON.stringify(message.message.rain);
 
-                    var location = message.message.location;
+                    var wind = JSON.stringify(message.message.wind);
 
-                    var min_amount = message.message.min_set_amt;
+                    var earthquake = JSON.stringify(message.message.earthquake);
 
-                    var policyplans = message.message.plans;
+                    var insurance = JSON.stringify(message.message.insurance);
+
+                    var insuranceCompanyA = (message.message.insuranceCompanyA);
+
+                    var emailA = JSON.stringify(message.message.emailA);
+
+                    var insuranceCompanyB = (message.message.insuranceCompanyB);
+
+                    var emailB = JSON.stringify(message.message.emailB);
+
+                    var address = JSON.stringify(message.message.address);
+
+                    var insurerName = JSON.stringify(message.message.insurerName);
+
+                    var insurerEmail = JSON.stringify(message.message.insurerEmail);
 
                     mydata.push({
-                        "address": address,
-                        "date": date,
-                        // "currency": fx,
-                        "location": location,
-                        "amountpaid": min_amount,
-                        "policy": policyplans
+                        "PartyA": message.message.partyA,
+                        "PartyB": message.message.partyB,
+                        "location": message.message.location,
+                        "Rain": message.message.rain,
+                        "Wind": message.message.wind,
+                        "Earthquake": message.message.earthquake,
+                        "Insurance": message.message.insurance,
+                        "insuranceCompanyA": insuranceCompanyA,
+                        "EmailA": message.message.emailA,
+                        "insuranceCompanyB": insuranceCompanyB,
+                        "EmailB": message.message.emailB,
+                        "Address": message.message.address,
+                        "insurer": message.message.insurerName,
+                        "insurerEmail": message.message.insurerEmail
                     });
 
-                    console.log("length:" + mydata.length)
+                    var tbl = $("<table/>").attr("Address", "itemList");
+                    $("#services").append(tbl);
                     for (var i = 0; i < mydata.length; i++) {
-                        var getData = [];
+                        var tr = "<tr>";
+                        var td1 = "<td> " + mydata[i]["Address"] + "</td></tr>";
+                        var td2 = "<td>" + mydata[i]["PartyA"] + "</td></tr>";
+                        var td3 = "<td>" + mydata[i]["PartyB"] + "</td></tr>";
+                        var td4 = "<td>" + mydata[i]["location"] + "</td></tr>";
+                        var td5 = "<td>" + mydata[i]["Rain"] + "</td></tr>";
+                        var td6 = "<td>" + mydata[i]["Wind"] + "</td></tr>";
+                        var td7 = "<td>" + mydata[i]["Earthquake"] + "</td></tr>";
+                        var td8 = "<td>" + mydata[i]["Insurance"] + "</td></tr>";
+                        var td9 = "<td>" + mydata[i]["EmailA"] + "</td></tr>";
+                        var td10 = "<td>" + mydata[i]["EmailB"] + "</td></tr>";
+                        var td111 = "<td>" + mydata[i]["insurer"] + "</td></tr>";
+                        var td121 = "<td>" + mydata[i]["insurerEmail"] + "</td></tr>";
+                        var td221 = "<td>" + mydata[i]["insuranceCompanyA"] + "</td></tr>";
+                        var td222 = "<td>" + mydata[i]["insuranceCompanyB"] + "</td></tr>";
 
-                        var td1 = mydata[i]["address"];
-                        console.log("line number 704--->", td1);
-                        var td2 = mydata[i]["date"];
-                        // var td3 = mydata[i]["currency"];
-                        var td4 = mydata[i]["location"];
-                        var td5 = mydata[i]["amountpaid"];
-                        var td6 = mydata[i]["policy"];
-                        var tablerow = "<tr> <td>" + td1 + "</td><td>" + td6 + "</td><td>" + td5 + "</td><td>" + td4 + "</td><td>" + td2 + "</td></tr>"
+                        document.getElementById("td1").innerHTML = td1;
+                        document.getElementById("td2").innerHTML = td2;
+                        document.getElementById("td3").innerHTML = td3;
+                        document.getElementById("td4").innerHTML = td4;
+                        document.getElementById("td5").innerHTML = td5;
+                        document.getElementById("td6").innerHTML = td6;
+                        document.getElementById("td7").innerHTML = td7;
+                        document.getElementById("td8").innerHTML = td8;
+                        document.getElementById("td9").innerHTML = td9;
+                        document.getElementById("td10").innerHTML = td10;
+                        document.getElementById("td111").innerHTML = td111;
+                        document.getElementById("td121").innerHTML = td121;
+                        document.getElementById("td221").innerHTML = td221;
+                        document.getElementById("td222").innerHTML = td222;
 
-                        console.log(i)
-                        $('#dataTable').append(tablerow)
+                        //   $("#itemList").append(tr+td1+td2+td3+td4+td5+td6+td7+td8+td9+td10); 
 
                     }
 
                 }
-
-            })
-        }
-    });
-</script>
-
-<script>
-     $(document).ready(function() {
-
-        window.onload = getdata();
-
-        function getdata() {
-     $.ajax({
-                url: "http://192.168.0.26:3006/trigger",
+            });
+            $.ajax({
+                url: "http://119.81.59.59:3006/weatherdata",
                 method: "GET",
                 contentType: 'application/json',
 
@@ -563,68 +756,246 @@
 
                     var mydata1 = [];
                     console.log("lol----", mydata1)
-                           
-               
-                    for (var j=0; j<message.passed.length; j++){
-                        var estatus = message.passed[j].status;
-                        console.log("lololao",estatus)
-                      
-                        var names =message.passed[j].User.name;
-                        console.log("data-----",names);
-                        var dates = message.passed[j].User.date;
-                        
-
-                        var locations = message.passed[j].User.location;
-      
-                        var policynumber = message.passed[j].User.policyno;
-                         
-                        var plans= message.passed[j].User.plan;
-
-                        var premiumdata = message.passed[j].User.premium;
-
-                        var currency=message.passed[j].rates;
-                        console.log("data----",currency)
-                        
-                        mydata1.push({
-                            "name":names,
-                            "date":dates,
-                            "location":locations,
-                            "policy":policynumber,
-                            "plan":plans,
-                            "premium":premiumdata,
-                            "status":estatus,
-                            "currency":currency
-                        });
-                   
-                      }
-                   
-                    console.log("length:"+mydata1.length)
-                  for (var i = 0; i < mydata1.length; i++) {
-                      var getData=[];
-                      
-                      var td11 = mydata1[i]["name"];
-                      console.log("line number 704--->",td11);
-                      var td12 = mydata1[i]["date"];
-                      var td13 = mydata1[i]["location"];
-                      var td14 = mydata1[i]["policy"];
-                      var td15 = mydata1[i]["plan"];
-                      var td16 = mydata1[i]["premium"];
-                      var td10 = mydata1[i]["status"];
-                      var td17 = mydata1[i]["currency"];
-                      //getData.push({  })
-
-                      var tablerow = "<tr><td>"+td11 + "</td><td>"+ td14+ "</td><td>"+td16 + "</td><td>"+ td13 + "</td><td>"+ td12 + "</td><td>"+ td15+"</td><td>"+td10+"</td><td>"+td17+"</td></tr>"
-                      
-                      console.log(i)
-                      $('#dataTable1').find('#tbody1').append(tablerow)
-
-                  }
                 
+                    var temp = message.temp;
+
+                    var temp_min = message.min_temp;
+
+                    var temp_max = message.max_temp;
+
+                    var speed = message.wind_speed;
+
+                    var deg = message.wind_deg;
+
+                    var rain = message.rain;
+
+                    mydata1.push({
+                        "temp": temp,
+                        "temp_min":temp_min,
+                        "temp_max":temp_max,
+                        "windspeed": speed,
+                        "rain": rain,
+                        "deg": deg,
+                        
+                    });
+
+                    var tbl1 = $("<tbl/>").attr("temp", "myitem");
+                    $("#portfolio").append(tbl1);
+                    for (var i = 0; i < mydata1.length; i++) {
+                        var tr = "<tr>";
+                        var td11 = "<td>" + mydata1[i]["temp"] + "</td></tr>";
+                        var td12 = "<td>" + mydata1[i]["temp_min"] + "</td></tr>";
+                        var td13 = "<td>" + mydata1[i]["temp_max"] + "</td></tr>";
+                        var td14 = "<td>" + mydata1[i]["windspeed"] + "</td></tr>";
+                        var td16 = "<td>" + mydata1[i]["rain"]+"</td></tr>";
+                        var td15 = "<td>" + mydata1[i]["deg"] + "</td></tr>";
+
+                        document.getElementById("td11").innerHTML = td11;
+                        document.getElementById("td12").innerHTML = td12;
+                        document.getElementById("td13").innerHTML = td13;
+                        document.getElementById("td14").innerHTML = td14;
+                        document.getElementById("td15").innerHTML = td15;
+                        document.getElementById("td16").innerHTML = td16;
+
+
+                    }
 
                 }
 
             });
+            // return setInterval(function(){
+            // $.ajax({
 
-    }
-    })
+            //     url: "http://192.168.0.26:3006/weatherapi",
+            //     method: "GET",
+            //     contentType: 'application/json',
+
+            //     success: function(message) {
+
+            //         var mydata2 = [];
+
+            //         var issuedData = (message.wind);
+            //         console.log("issuedData----", issuedData.length)
+
+            //         for (var i = 0; i < issuedData.length; i++) {
+            //             mydata2.push({
+            //                 "name": issuedData[i].name,
+            //                 "policyno": issuedData[i].policyno,
+            //                 "premium": issuedData[i].premium,
+            //                 "claim": issuedData[i].claim,
+            //                 "partyA_amt": issuedData[i].partyA_amt,
+            //                 "partyB_amt": issuedData[i].partyB_amt
+            //                     // "partyC_amt": issuedData[i].partyC_amt
+            //             });
+            //         }
+            //         var tbl1 = $("<tbl/>").attr("name", "tems1");
+            //         $("#portfolio").append(tbl1);
+            //         for (var i = 0; i < mydata2.length; i++) {
+            //             var tr = "<tr>";
+            //             var td00 = "<td> " + mydata2[i]["name"] + "</td></tr>";
+            //             var td01 = "<td>" + mydata2[i]["policyno"] + "</td></tr>";
+            //             var td02 = "<td>" + mydata2[i]["premium"] + "</td></tr>";
+            //             var td03 = "<td>" + mydata2[i]["claim"] + "</td></tr>";
+            //             var td04 = "<td>" + mydata2[i]["partyA_amt"] + "</td></tr>";
+            //             var td05 = "<td>" + mydata2[i]["partyB_amt"] + "</td></tr>";
+            //             // var td06="<td>"+mydata2[i]["partyC_amt"]+"</td></tr>";
+
+            //             document.getElementById("td01").innerHTML = td01;
+            //             document.getElementById("td02").innerHTML = td02;
+            //             document.getElementById("td03").innerHTML = td03;
+            //             document.getElementById("td04").innerHTML = td04;
+            //             document.getElementById("td05").innerHTML = td05;
+            //             // document.getElementById("td06").innerHTML=td06;
+
+            //             break;
+            //         }
+
+            //     }
+
+            // });
+            // },3000);
+
+            // return setInterval(function() {
+            //     $.ajax({
+
+            //         url: "http://192.168.0.26:3006/mockweatherapi",
+            //         method: "GET",
+            //         contentType: 'application/json',
+
+            //         success: function(message) {
+
+            //             var mydata2 = [];
+
+            //             var issuedData = (message.wind);
+            //             // console.log("issuedData----",issuedData.length)
+
+            //             for (var i = 0; i < issuedData.length; i++) {
+            //                 mydata2.push({
+            //                     "name": issuedData[i].name,
+            //                     "policyno": issuedData[i].policyno,
+            //                     "premium": issuedData[i].premium,
+            //                     "claim": issuedData[i].claim,
+            //                     "partyA_amt": issuedData[i].partyA_amt,
+            //                     "partyB_amt": issuedData[i].partyB_amt
+            //                         // "partyC_amt": issuedData[i].partyC_amt
+            //                 });
+            //             }
+            //             var tbl1 = $("<tbl/>").attr("name", "tems1");
+            //             $("#portfolio").append(tbl1);
+            //             for (var i = 0; i < mydata2.length; i++) {
+            //                 var tr = "<tr>";
+            //                 var td00 = "<td> " + mydata2[i]["name"] + "</td></tr>";
+            //                 var td01 = "<td>" + mydata2[i]["policyno"] + "</td></tr>";
+            //                 var td02 = "<td>" + mydata2[i]["premium"] + "</td></tr>";
+            //                 var td03 = "<td>" + mydata2[i]["claim"] + "</td></tr>";
+            //                 var td04 = "<td>" + mydata2[i]["partyA_amt"] + "</td></tr>";
+            //                 var td05 = "<td>" + mydata2[i]["partyB_amt"] + "</td></tr>";
+            //                 // var td06="<td>"+mydata2[i]["partyC_amt"]+"</td></tr>";
+
+            //                 document.getElementById("td00").innerHTML = td00;
+            //                 document.getElementById("td01").innerHTML = td01;
+            //                 document.getElementById("td02").innerHTML = td02;
+            //                 document.getElementById("td03").innerHTML = td03;
+            //                 document.getElementById("td04").innerHTML = td04;
+            //                 document.getElementById("td05").innerHTML = td05;
+            //                 // document.getElementById("td06").innerHTML=td06;
+
+            //                 break;
+            //             }
+
+            //         }
+
+            //     });
+            // }, 4000);
+        };
+    });
+</script>
+
+<script>
+    $(document).ready(function() {
+
+        // window.onload = getdata;
+
+ return setInterval(function() {
+                $.ajax({
+
+                    url: "http://119.81.59.59:3006/mockweatherapi",
+                    method: "GET",
+                    contentType: 'application/json',
+
+                    success: function(message) {
+
+                        var mydata2 = [];
+
+                        var issuedData = (message.wind);
+                        // console.log("issuedData----",issuedData.length)
+
+                        for (var i = 0; i < issuedData.length; i++) {
+                            mydata2.push({
+                                "name": issuedData[i].name,
+                                "policyno": issuedData[i].policyno,
+                                "premium": issuedData[i].premium,
+                                "claim": issuedData[i].claim,
+                                "partyA_amt": issuedData[i].partyA_amt,
+                                "partyB_amt": issuedData[i].partyB_amt
+                                    // "partyC_amt": issuedData[i].partyC_amt
+                            });
+                        }
+                        var tbl1 = $("<tbl/>").attr("name", "tems1");
+                        $("#portfolio").append(tbl1);
+                        for (var i = 0; i < mydata2.length; i++) {
+                            var tr = "<tr>";
+                            var td00 = "<td> " + mydata2[i]["name"] + "</td></tr>";
+                            var td01 = "<td>" + mydata2[i]["policyno"] + "</td></tr>";
+                            var td02 = "<td>" + mydata2[i]["premium"] + "</td></tr>";
+                            var td03 = "<td>" + mydata2[i]["claim"] + "</td></tr>";
+                            var td04 = "<td>" + mydata2[i]["partyA_amt"] + "</td></tr>";
+                            var td05 = "<td>" + mydata2[i]["partyB_amt"] + "</td></tr>";
+                            // var td06="<td>"+mydata2[i]["partyC_amt"]+"</td></tr>";
+
+                            document.getElementById("td00").innerHTML = td00;
+                            document.getElementById("td01").innerHTML = td01;
+                            document.getElementById("td02").innerHTML = td02;
+                            document.getElementById("td03").innerHTML = td03;
+                            document.getElementById("td04").innerHTML = td04;
+                            document.getElementById("td05").innerHTML = td05;
+                            // document.getElementById("td06").innerHTML=td06;
+
+                            break;
+                        }
+
+                    }
+
+                });
+            }, 4000);
+        })
+
+</script>
+<script>
+        $(function() {
+        $("#feedback-tab").click(function() {
+            $("#feedback-form").toggle("slide");
+        });
+    
+        $("#feedback-form form").on('submit', function(event) {
+            var $form = $(this);
+            $.ajax({
+                type: $form.attr('method'),
+                url: $form.attr('action'),
+                data: $form.serialize(),
+                success: function() {
+                    $("#feedback-form").toggle("slide").find("textarea").val('');
+                }
+            });
+            event.preventDefault();
+        });
+    });
+        </script>
+        <script>
+            document.getElementById("submit").onclick = function() {
+    //disable
+    this.disabled = true;
+
+    //do some validation stuff
+}
 </script>
